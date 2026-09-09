@@ -1,0 +1,76 @@
+/home/gsence/Documents/piscine/C03➜  C02 git:(master) git push
+Gitea: Unauthorized
+User: 1316:gsence with Key: 78541:gsence 2026-09-09T14:16:26Z is not authorized to write to vogsphere/intra-uuid-fb8b8a2b-80e4-4cea-91a9-ed3ed946ff8c-7671381-gsence.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+➜  C02 git:(master) cd ..
+➜  piscine ls
+ C00   C00last   C01   C02  'C02 (copy)'   C03   C04   C05   Rush00   Shell00   Shell01   test
+➜  piscine cd C03
+➜  C03 ls
+ex00  ex01  ex02  ex03  ex04  ex05
+➜  C03 cd ..
+➜  piscine mv C03 C03tomove
+➜  piscine ls
+ C00   C00last   C01   C02  'C02 (copy)'   C03tomove   C04   C05   Rush00   Shell00   Shell01   test
+➜  piscine git clone git@vogsphere.42lehavre.fr:vogsphere/intra-uuid-ee85ad54-83cc-4a01-b4d0-36b2ae963eb7-7653586-gsence C03
+Cloning into 'C03'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (4/4), 261 bytes | 261.00 KiB/s, done.
+➜  piscine ls
+ C00       C01  'C02 (copy)'   C03tomove   C05      Shell00   test
+ C00last   C02   C03           C04         Rush00   Shell01
+➜  piscine cd C03
+➜  C03 git:(master) ✗ git add .
+➜  C03 git:(master) ✗ git commit -m "C03 creation"
+[master a654b38] C03 creation
+ Committer: Guillaume Sence <gsence@c1r2p10.42lehavre.fr>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 298 insertions(+)
+ create mode 100644 ex00/ft_strcmp.c
+ create mode 100644 ex01/ft_strncmp.c
+ create mode 100755 ex02/a.out
+ create mode 100644 ex02/ft_strcat.c
+ create mode 100755 ex03/a.out
+ create mode 100644 ex03/ft_strncat.c
+ create mode 100755 ex04/a.out
+ create mode 100644 ex04/ft_strstr.c
+ create mode 100755 ex05/a.out
+ create mode 100644 ex05/ft_strlcat.c
+➜  C03 git:(master) git push
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (18/18), 7.28 KiB | 7.28 MiB/s, done.
+Total 18 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: . Processing 1 references
+remote: Processed 1 references in total
+To vogsphere.42lehavre.fr:vogsphere/intra-uuid-ee85ad54-83cc-4a01-b4d0-36b2ae963eb7-7653586-gsence
+   6bee1b3..a654b38  master -> master
+➜  C03 git:(master) touch test
+➜  C03 git:(master) ✗ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	test
+
+nothing added to commit but untracked files present (use "git add" to track)
+

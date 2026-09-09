@@ -1,0 +1,9 @@
+https://github.com/btleafar/42/blob/master/Piscines/C/Day00/answers/ex02/README.md
+
+ft_putstr est une fonction classique de l'école 42 qui affiche une chaîne de caractères à l'écran, caractère par caractère, en utilisant la fonction système write
+
+git clone
+git add *
+git commit -m "thks"
+git status 
+git push
